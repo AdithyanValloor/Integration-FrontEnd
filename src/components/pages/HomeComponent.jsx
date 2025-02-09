@@ -12,7 +12,7 @@ function HomeComponent() {
   useEffect(()=>{  
     async function FetchData () {
       try {
-        const response = await axios.get(`${backendURL}`)
+        const response = await axios.get(`${backendURL}/products`)
         setProducts(response.data)
         return console.log(response.data[0]);
       } catch (error) {

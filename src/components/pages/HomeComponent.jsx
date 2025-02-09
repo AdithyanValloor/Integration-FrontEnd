@@ -26,7 +26,7 @@ function HomeComponent() {
     <>
       <div className="bg-white min-h-screen p-6 text-white flex justify-center">
         <div className="w-full max-w-6xl">
-          <h1 className="text-2xl font-bold mb-4 text-center">Trending</h1>
+          <h1 className="text-2xl text-black mb-4 text-center">Trending</h1>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 gap-4 w-full">
             {products.map((product, index) => (
               <ProductCard key={index} {...product} />
